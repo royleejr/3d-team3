@@ -1,12 +1,16 @@
 {
   "name": "brainstation-3d-team-master",
   "version": "1.0.0",
-  "description": "A base repo for the students to start working from",
+  "description": "A base repo for the students to start working from for BS3D.",
   "main": "index.js",
   "scripts": {
     "cra": "cd client && npm start",
     "server": "cd server && npm run start:nodemon",
-    "start": "npm-run-all --parallel server cra"
+    "start": "npm-run-all --parallel server cra",
+    "client:install": "cd client && npm install",
+    "server:install": "cd server && npm install",
+    "install:all": "npm run client:install && npm run server:install",
+    "install:start": "npm install && npm run install:all && npm start"
   },
   "author": "BrainStation 3D Team",
   "license": "ISC",
