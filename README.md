@@ -20,7 +20,7 @@
 4. Pull in the files from the `production` remote
 
    ```bash
-   $ git pull production
+   $ git pull production master
    ```
 
 5. Ensure that the client and server environments work. You should see the site once everything is done.
