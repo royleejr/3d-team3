@@ -1,9 +1,14 @@
 ## 1. Team Dynamics
 
 1. Pick someone into your time to host the main repository on their GitHub account.
-2. Create the git repository on GitHub. It doesn't matter if the repo is public or private.
-3. Add your dev team members as collaborators to the repository.
-4. Clone the repo to your dev team computers
+
+2. Create the git repository on GitHub. It doesn't matter if the repo is public or private. **DON'T initialize the repositiory!**
+
+3. Add your team members as collaborators to the repository.
+
+4. Clone the repo to you and your team members computers. 
+
+   `git clone <<your_github_repo_url>>`
 
 ## 2. Main GitHub Account Holder Setup
 
@@ -11,10 +16,10 @@
 
 2. Also send the GitHub username that will be pushing changes for your team. We will add you as a collaborator to this additional repository.
 
-3. Add the repo as an additional one to the `origin`
+3. Add the production repo as an additional to `origin` in your own local git directory
 
    ```bash
-   $ git remote add production <<github_repo_url>>
+   $ git remote add production <<production_github_repo_url>>
    ```
 
 4. Pull in the files from the `production` remote
@@ -30,16 +35,29 @@
    $ npm start
    ```
 
-    FYI: These environments contains the following NPM packages (`package.json`)
+   If you are not going to use the server, you can then:
+
+   ```bash
+   $ cd ./client
+   $ npm install
+   $ npm start
+   ```
+
+   
+
+   FYI: These environments contains the following NPM packages (`package.json`)
 
    Client (Create-React-App):
 
    ```
-   "axios": "^0.18.0",
-   "react": "^16.8.6",
-   "react-dom": "^16.8.6",
-   "react-router-dom": "^5.0.0",
-   "react-scripts": "3.0.1"
+    "axios": "^0.18.0",
+    "chart.js": "^2.8.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1"
    ```
 
    Server (Node, Express):
@@ -72,4 +90,15 @@
    $ npm start
    ```
 
-   
+
+## 3. Production Push
+
+Early in the afternoon, do a push to the production repository (regardless of the current visual state).
+
+First, merge your changes into the `master` branch. Once completed, test that your site is still working correctly. 
+
+Lastly, push your changes to the `production` remote.
+
+```bash
+$ git push production
+```
