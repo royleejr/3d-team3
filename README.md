@@ -2,7 +2,7 @@
 
 1. Pick someone into your time to host the main repository on their GitHub account.
 
-2. Create the git repository on GitHub. It doesn't matter if the repo is public or private. **DON'T initialize the repositiory!**
+2. Create the git repository on GitHub. It doesn't matter if the repo is public or private. **DON'T initialize the repository!**
 
 3. Add your team members as collaborators to the repository.
 
@@ -43,32 +43,30 @@
    $ npm start
    ```
 
-   
+    FYI: These environments contains the following NPM packages (`package.json`)
 
-   FYI: These environments contains the following NPM packages (`package.json`)
+    Client (Create-React-App):
 
-   Client (Create-React-App):
-
-   ```
-    "axios": "^0.18.0",
+    ```
+    "axios": "^0.19.0",
     "chart.js": "^2.8.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
-   ```
+    ```
 
-   Server (Node, Express):
+    Server (Node, Express):
 
-   ```
-   "axios": "^0.18.0",
-   "cors": "^2.8.5",
-   "express": "^4.16.4",
-   "jsonwebtoken": "^8.5.1",
-   "nodemon": "^1.19.0"
-   ```
+    ```
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.1"
+    ```
 
 6. Add and commit the files
 
@@ -102,3 +100,10 @@ Lastly, push your changes to the `production` remote.
 ```bash
 $ git push production
 ```
+
+## 4. Publish to a live server
+When the code is pushed to the production remote on GitHub, Netlify will build and deploy the client (CRA) to a live web server. 
+
+**Please allow a _minimum_ of 5 minutes for the build process to complete and publish your site on Netlify.**
+
+The URL for the public site is https://<netlify-sub-domain>.netlify.com

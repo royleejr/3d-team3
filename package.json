@@ -1,7 +1,7 @@
 {
   "name": "brainstation-3d-team-master",
   "version": "1.0.0",
-  "description": "A base repo for the students to start working from",
+  "description": "A base repo for the students to start working from for BS3D.",
   "main": "index.js",
   "scripts": {
     "cra": "cd client && npm start",
