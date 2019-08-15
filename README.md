@@ -106,4 +106,4 @@ When the code is pushed to the production remote on GitHub, Netlify will build a
 
 **Please allow a _minimum_ of 5 minutes for the build process to complete and publish your site on Netlify.**
 
-The URL for the public site is https://bstn-3d-summer-2019-team-1.netlify.com
+The URL for the public site is https://bstn-3d-summer-2019-team-3.netlify.com
