@@ -9,7 +9,7 @@ class Hero extends React.Component {
     return (
       <section className="hero">
         <p className="hero__title animated fadeInLeft">Top Trending Words</p>
-        <p className="hero__description animated fadeInLeft">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology than we’ve ever had access to before.</p>
+        <p className="hero__description animated fadeInLeft">Interested in knowing what topics are trending? This word web displays the most commonly used words across Mashable! The larger the word the more used it has been in the past two years.</p>
         <div className="hero__image-container">
           <img className="hero__image-container__image" src={image}></img>
         </div>
