@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Hero.scss';
-import image from '../../Assets/hero-image.svg';
+import image from '../../Assets/word_cloud.png';
 
 
 class Hero extends React.Component {
