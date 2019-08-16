@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
-  return (
-    <h1>Roy and Ece's Amazing Team</h1>
-  );
+class App extends React.Component {
+  render () {
+    return (
+      <h1>Roy and Ece's Amazing Team</h1>
+    );
+  }
 }
 
 export default App;
