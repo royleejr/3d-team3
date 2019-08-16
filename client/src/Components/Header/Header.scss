@@ -1,0 +1,53 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.header {
+
+  &__container1 {
+    height: 30px;
+    background-color: #2c2c2c;
+  }
+
+  &__container2 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+    &__logo {
+
+    }
+  }
+
+  &__container3 {
+    display:flex;
+    height: 40px;
+    justify-content: center;
+    background-color: $Blue;
+    align-items:center;
+
+    &--flex {
+      display: flex;
+      margin-right: 700px;
+      box-sizing: border-box;
+    }
+
+    &__text {
+      font-family: 'proxima-nova';
+      padding: 0 20px;
+      color: white;
+    }
+
+    &__box {
+      display: flex;
+    }
+
+    &__icons {
+      padding: 0 20px;
+    }
+  }
+}
+
+
+.black {
+  background-color: black;
+}

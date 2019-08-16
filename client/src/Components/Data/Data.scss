@@ -1,0 +1,38 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+
+.data {
+  padding: 0 167px 0 165px;
+  display: flex;
+  flex-direction: column;
+
+
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'proxima-nova';
+    text-align: center;
+    margin: 70px 0 20px 0;
+    color: $Blue;
+    
+  }
+
+  &__description {
+    font-size: 18px;
+    width: 538px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__image {
+    width: 761px;
+    align-self: center;
+  }
+
+  &__background {
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+}

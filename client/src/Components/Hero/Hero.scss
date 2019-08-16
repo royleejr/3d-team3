@@ -1,0 +1,32 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.hero {
+  padding-bottom: 100px;
+  padding: 0 167px 0 165px;
+
+  &__title{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'proxima-nova';
+    margin-top: 100px;
+    margin-bottom: 0;
+    color: $Blue;
+  }
+
+  &__description {
+    font-size: 16px;
+    width: 538px;
+    margin-bottom: 100px;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    background-color: $White;
+
+    &__image {
+
+    }
+  }
+}
